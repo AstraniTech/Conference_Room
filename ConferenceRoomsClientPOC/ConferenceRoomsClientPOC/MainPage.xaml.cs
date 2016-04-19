@@ -37,8 +37,9 @@ namespace ConferenceRoomsClientPOC
         private ObservableCollection<ConferenceRoomDataPoint> conferenceRoomDataPoint = new ObservableCollection<ConferenceRoomDataPoint>();
         ConferenceRoomDataPointList conferenceRoomDataPointList;
         
-        static string ConnectionString = "Endpoint=sb://ihsuprodhkres029dednamespace.servicebus.windows.net/;SharedAccessKeyName=iothubowner;SharedAccessKey=+I95mfRw0jBMsbiYGQFGo4NF46gdUbOOyAK+T9MxQIA=";
-        static string eventHubEntity = "iothub-ehub-conference-29104-8890dfe8d6";
+        //Replace *** stars with your respective details
+        static string ConnectionString = "Endpoint=************************;SharedAccessKeyName=iothubowner;SharedAccessKey=*****************";
+        static string eventHubEntity = "iothub-ehub-conference-123456456786543";
         static string partitionId = "0";
         static DateTime startingDateTimeUtc;
         EventHubConsumerGroup group;
