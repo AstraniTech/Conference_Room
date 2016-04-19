@@ -33,16 +33,7 @@ namespace ConferenceRoomsPIRPOC
         static DeviceClient deviceClient;
         //static string iotHubUri = "IoTHubForConnectingDots.azure-devices.net";
         static string iotHubUri = "ConferenceRooms.azure-devices.net";
-        //static string deviceName = "astraniDevice";
-        //static string deviceKey = "efG89i9ThXrSLubo9EVV3BROgrByS0yyHIY1YdWtvLw=";
-        //static string deviceName = "ConferenceRoom1";
-        //static string deviceKey = "PCjEwRjfA8g+g5Eq+Ok7pAVMZqqB7z99+rCxJ8UiBg4=";
-        //static string deviceName = "ConferenceRoom2";
-        //static string deviceKey = "2V1fE1z1paziQXTSAe/ejuuhMV6B9KbDYaXcfX9Gj/o=";
-
-        //static string deviceName = "ConferenceRoom2";
-        //static string deviceKey = "l1jJcd8TOZvUpJshkdI6WwLsesLHK2mpTGibnfIV08k=";
-
+        
         static string deviceName = "ConferenceRoom1";
         static string deviceKey = "27GxYIaiFD/z6g/pPxr/V/1cqt5lAmsZ8riFHIAqDwI=";
 
@@ -106,6 +97,7 @@ namespace ConferenceRoomsPIRPOC
             {
                 timer.Start();
             }
+
             Windows.Security.ExchangeActiveSyncProvisioning.EasClientDeviceInformation eas = new Windows.Security.ExchangeActiveSyncProvisioning.EasClientDeviceInformation();
             Debug.WriteLine(eas.FriendlyName);
 
@@ -118,21 +110,7 @@ namespace ConferenceRoomsPIRPOC
             mcp3008.Initialize();
             // var devices= NetworkInformation.GetHostNames();
         }
-        //private async static Task AddDeviceAsync()
-        //{
-        //    string deviceId = "astraniDevice";
-        //    Device device;
-        //    //var device1 = HttpContext.Current.Server.MachineName;           
-        //    try
-        //    {
-        //        device = await registryManager.AddDeviceAsync(new Device(deviceId));
-        //    }
-        //    catch (DeviceAlreadyExistsException)
-        //    {
-        //        device = await registryManager.GetDeviceAsync(deviceId);
-        //    }
-        //    Debug.WriteLine("Generated device key: {0}", device.Authentication.SymmetricKey.PrimaryKey);
-        //}
+       
         private void InitGPIO()
         {
             // get the GPIO controller

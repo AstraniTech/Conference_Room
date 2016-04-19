@@ -11,7 +11,8 @@ namespace CreateDeviceIdentityConsoleApp
     class Program
     {
         static RegistryManager registryManager;
-        static string connectionString = "HostName=IoTHubForConnectingDots.azure-devices.net;SharedAccessKeyName=iothubowner;SharedAccessKey=sYLZ+KzhNS11tpn9jmq5ghucGZxzlrUp/MI9gc1jvlA=";
+        //Replace stars with your hostname and shared access key
+        static string connectionString = "HostName=**********************.azure-devices.net;SharedAccessKeyName=iothubowner;SharedAccessKey=*****************************";
         static void Main(string[] args)
         {
             registryManager = RegistryManager.CreateFromConnectionString(connectionString);

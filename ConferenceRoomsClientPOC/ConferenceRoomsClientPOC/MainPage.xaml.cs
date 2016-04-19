@@ -151,16 +151,7 @@ namespace ConferenceRoomsClientPOC
 
         private void adaptiveStates_CurrentStateChanged(object sender, VisualStateChangedEventArgs e)
         {
-            //if (adaptiveStates.CurrentState == narrowState)
-            //{
-            //    roomsListView.ItemsSource = conferenceRoomDataPointList;
-            //    roomsGridView.ItemsSource = conferenceRoomDataPointList;
-            //}
-            //else
-            //{
-            //    roomsListView.ItemsSource = conferenceRoomDataPointList;
-            //    roomsGridView.ItemsSource = conferenceRoomDataPointList;
-            //}
+           
         }
 
         private void NotificationToggleSwtich_Toggled(object sender, RoutedEventArgs e)
