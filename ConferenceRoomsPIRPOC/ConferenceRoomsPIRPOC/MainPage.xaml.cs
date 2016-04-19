@@ -35,7 +35,7 @@ namespace ConferenceRoomsPIRPOC
         static string iotHubUri = "ConferenceRooms.azure-devices.net";
         
         static string deviceName = "ConferenceRoom1";
-        static string deviceKey = "27GxYIaiFD/z6g/pPxr/V/1cqt5lAmsZ8riFHIAqDwI=";
+        static string deviceKey = "******************************";
 
         private const int ledPin = 5;
         private const int pirPin = 6;
